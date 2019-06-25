@@ -18,10 +18,10 @@ header {
 
 main {
   display: flex;
-  height: 80%;
-  width: 100%;
   justify-content: center;
   align-items: center;
+  height: 80%;
+  width: 100%;
 }
 
 .progress-gray {
@@ -63,4 +63,8 @@ div.progress {
   padding: 0.7rem 10rem;
   font-size: 1.7rem;
   text-transform: uppercase;
+}
+
+.my-flipster {
+  display: block !important;
 }

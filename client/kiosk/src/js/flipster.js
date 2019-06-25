@@ -1,5 +1,3 @@
-// $('.my-flipster').flipster();
-
 $('.my-flipster').flipster({
   itemContainer: 'ul',
   // [string|object]
@@ -29,12 +27,12 @@ $('.my-flipster').flipster({
   // [true|false]
   // If true, autoplay advancement will pause when Flipster is hovered
 
-  style: 'coverflow',
+  style: 'carousel',
   // [coverflow|carousel|flat|...]
   // Adds a class (e.g. flipster--coverflow) to the flipster element to switch between display styles
   // Create your own theme in CSS and use this setting to have Flipster add the custom class
 
-  spacing: -0.8,
+  spacing: -0.55,
   // [number]
   // Space between items relative to each item's width. 0 for no spacing, negative values to overlap
 
