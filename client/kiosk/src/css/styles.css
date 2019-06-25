@@ -67,4 +67,20 @@ div.progress {
 
 .my-flipster {
   display: block !important;
+  margin-top: 3rem;
+}
+
+.my-flipster img {
+  width: 500px;
+}
+
+.my-flipster h2 {
+  visibility: hidden;
+  padding: 3rem 0;
+  text-align: center;
+  background-color: transparent;
+}
+
+.flipster__item--current h2 {
+  visibility: visible;
 }
