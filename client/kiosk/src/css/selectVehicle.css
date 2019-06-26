@@ -1,4 +1,25 @@
 
+
+.btn {
+  font-family: 'Montserrat', sans-serif;
+  padding: 0.6rem 8rem;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 1.7rem;
+  margin-bottom: 1.7rem;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
 .small-img {
   width: 6.8rem;
   height: auto;
