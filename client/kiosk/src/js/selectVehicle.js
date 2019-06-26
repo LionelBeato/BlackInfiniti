@@ -21,9 +21,9 @@ const mocha = document.getElementById("mocha-almond");
 const viewCar = document.getElementById("view-car");
 const progress = document.getElementById("sv-progress");
 
-const progress1 = "10%";
-const progress2 = "15%";
-const progress3 = "20%";
+const progress1 = "28%";
+const progress2 = "39%";
+const progress3 = "50%";
 
 const viewCarClick = () => {
   window.location.href = './selectVehicle.html';

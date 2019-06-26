@@ -1,3 +1,7 @@
+/* ====-====-====-====-====-==== 
+          Font Classes
+   ====-====-====-====-====-==== */
+
 .montserrat {
   font-family: 'Montserrat', sans-serif;
 }
@@ -5,6 +9,10 @@
 .cardo {
   font-family: 'Cardo', serif;
 }
+
+/* ====-====-====-====-====-==== 
+          Type Selectors
+   ====-====-====-====-====-==== */
 
 html, body {
   height: 100%;
@@ -18,28 +26,38 @@ header {
 
 main {
   display: flex;
-  height: 82%;
-  width: 100%;
   justify-content: center;
   align-items: center;
+  height: 80%;
+  width: 100%;
 }
 
-.progress-gray {
-  background-color: rgb(179, 179, 179) !important;
-}
+/* ====-====-====-====-====-==== 
+          Global Classes
+   ====-====-====-====-====-==== */
 
 .top-margin {
   margin-top: 20px;
 }
 
-div.progress {
-  /* position: fixed; */
-  height: 2rem;
-  bottom: 10px;
-  margin-right: 10%;
-  margin-left: 10%;
-  width: 80%;
-}
+/* ====-====-====-====-====-==== 
+          Bootstrap Styles
+   ====-====-====-====-====-==== */
+
+   .btn {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0.7rem 10rem;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+  }
+  
+  .progress-gray {
+    background-color: rgb(179, 179, 179) !important;
+  }
+
+/* ====-====-====-====-====-==== 
+            Template
+   ====-====-====-====-====-==== */
 
 .container-logo {
   height: 100%;
@@ -52,37 +70,65 @@ div.progress {
   max-width: 80px;
 }
 
-.slider {
-  align-self: center;
-  width: 500px;
-  height: 200px;
+div.progress {
+  height: 2rem;
+  bottom: 10px;
+  margin-right: 10%;
+  margin-left: 10%;
+  width: 80%;
 }
 
-.btn {
-  font-family: 'Montserrat', sans-serif;
-  padding: 0.7rem 10rem;
-  font-size: 1.7rem;
-  text-transform: uppercase;
-}
+/* ====-====-====-====-====-==== 
+          Model Slider
+   ====-====-====-====-====-==== */
 
-.small-img {
-  width: 9.7rem;
-  height: auto;
-}
-
-h3 {
-  text-align: center;
-}
-
-.row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-top: 1.7rem;
-  margin-bottom: 1.7rem;
-}
-
-.column {
-  display: flex;
+.model {
   flex-direction: column;
+}
+
+.model h1 {
+  margin: 2.2rem 0 1.8rem;
+  font-size: 1.8rem;
+}
+
+.my-flipster {
+  display: block !important;
+}
+
+.my-flipster li a {
+  display: block;
+  cursor: pointer;
+}
+
+.my-flipster img {
+  margin-top: 1rem;
+  width: 600px;
+}
+
+.my-flipster h2 {
+  visibility: hidden;
+  padding: 2.5rem 0;
+  font-size: 1.6rem;
+  text-align: center;
+  background-color: transparent;
+}
+
+.flipster__item--current img {
+  animation:model-shadow ease-in-out 2.5s infinite;
+}
+
+.flipster__item--current h2 {
+  visibility: visible;
+}
+
+@keyframes model-shadow {
+  0% {
+    box-shadow: 2px 2px 6px 4px rgba(30,30,30,0.25);
+  }
+  50% {
+      box-shadow: 4px 4px 12px 8px rgba(30,30,30,0.3);
+  }
+  100% {
+    box-shadow: 2px 2px 6px 4px rgba(30,30,30,0.25);
+  }
 }
