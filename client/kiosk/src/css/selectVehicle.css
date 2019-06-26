@@ -1,4 +1,13 @@
 
+.small-img {
+  width: 6.8rem;
+  height: auto;
+}
+
+h3 {
+  text-align: center;
+}
+
 .space {
   width: 6rem;
 }
@@ -37,8 +46,8 @@
 }
 
 .circle {
-  width: 4rem;
-  height: 4rem;
+  width: 3.5rem;
+  height: 3.5rem;
   border-radius: 50%;
   border: 0.15rem solid lightgray;
   opacity: 0.18;

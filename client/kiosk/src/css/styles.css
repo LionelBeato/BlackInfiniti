@@ -60,18 +60,9 @@ div.progress {
 
 .btn {
   font-family: 'Montserrat', sans-serif;
-  padding: 0.7rem 10rem;
-  font-size: 1.7rem;
+  padding: 0.6rem 8rem;
+  font-size: 1.4rem;
   text-transform: uppercase;
-}
-
-.small-img {
-  width: 9.7rem;
-  height: auto;
-}
-
-h3 {
-  text-align: center;
 }
 
 .row {
