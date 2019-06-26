@@ -3,14 +3,6 @@
   width: 6rem;
 }
 
-.circle {
-  width: 4rem;
-  height: 4rem;
-  border-radius: 50%;
-  border: 0.15rem solid lightgray;
-  opacity: 0.18;
-}
-
 #select-car {
   opacity: 1;
 }
@@ -41,6 +33,14 @@
   opacity: 0.18;
 }
 #select-qx80 {
+  opacity: 0.18;
+}
+
+.circle {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: 0.15rem solid lightgray;
   opacity: 0.18;
 }
 

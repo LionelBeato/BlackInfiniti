@@ -19,6 +19,11 @@ const obsidian = document.getElementById("obsidian");
 const white = document.getElementById("pure-white");
 const mocha = document.getElementById("mocha-almond");
 const viewCar = document.getElementById("view-car");
+const progress = document.getElementById("sv-progress");
+
+const progress1 = "10%";
+const progress2 = "15%";
+const progress3 = "20%";
 
 const viewCarClick = () => {
   window.location.href = './selectVehicle.html';
@@ -35,59 +40,70 @@ const deactivateButton = () => {
 }
 
 const redClick = () => {
+  progress.style.width = progress3;
+  activateButton();
   deactivateColors();
   red.style.opacity = 1;
 }
 
 const midnightClick = () => {
+  progress.style.width = progress3;
   activateButton();
   deactivateColors();
   midnight.style.opacity = 1;
 }
 
 const majesticClick = () => {
+  progress.style.width = progress3;
   activateButton();
   deactivateColors();
   majestic.style.opacity = 1;
 }
 
 const graphiteClick = () => {
+  progress.style.width = progress3;
   activateButton();
   deactivateColors();
   graphite.style.opacity = 1;
 }
 
 const platinumClick = () => {
+  progress.style.width = progress3;
   activateButton();
   deactivateColors();
   platinum.style.opacity = 1;
 }
 
 const iridiumClick = () => {
+  progress.style.width = progress3;
   activateButton();
   deactivateColors();
   iridium.style.opacity = 1;
 }
 
 const haganeClick = () => {
+  progress.style.width = progress3;
   activateButton();
   deactivateColors();
   hagane.style.opacity = 1;
 }
 
 const obsidianClick = () => {
+  progress.style.width = progress3;
   activateButton();
   deactivateColors();
   obsidian.style.opacity = 1;
 }
 
 const whiteClick = () => {
+  progress.style.width = progress3;
   activateButton();
   deactivateColors();
   white.style.opacity = 1;
 }
 
 const mochaClick = () => {
+  progress.style.width = progress3;
   activateButton();
   deactivateColors();
   mocha.style.opacity = 1;
@@ -114,6 +130,7 @@ const activateColors = () => {
   white.addEventListener('click', whiteClick);
   mocha.style.opacity = 1;
   mocha.addEventListener('click', mochaClick);
+  progress.style.width = progress2;
 }
 
 const deactivateColors = () => {
@@ -196,6 +213,7 @@ const carClick = () => {
   q70l.addEventListener('click', q70lClick);
   deactivateColors();
   deactivateButton();
+  progress.style.width = progress1;
 }
 car.addEventListener('click', carClick);
 
@@ -257,5 +275,6 @@ const suvClick = () => {
   qx80.addEventListener('click', qx80Click);
   deactivateColors();
   deactivateButton();
+  progress.style.width = progress1;
 }
 suv.addEventListener('click', suvClick);
