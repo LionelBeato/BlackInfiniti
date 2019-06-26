@@ -1,0 +1,89 @@
+
+.space {
+  width: 6rem;
+}
+
+.circle {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: 0.15rem solid lightgray;
+  opacity: 0.18;
+}
+
+#select-car {
+  opacity: 1;
+}
+
+#select-suv {
+  opacity: 1;
+}
+
+#select-q50 {
+  opacity: 0.18;
+}
+#select-q60 {
+  opacity: 0.18;
+}
+#select-q70 {
+  opacity: 0.18;
+}
+#select-q70l {
+  opacity: 0.18;
+}
+#select-qx30 {
+  opacity: 0.18;
+}
+#select-qx50 {
+  opacity: 0.18;
+}
+#select-qx60 {
+  opacity: 0.18;
+}
+#select-qx80 {
+  opacity: 0.18;
+}
+
+#sunstone-red {
+  background-color: rgb(178,21,17);
+}
+
+#midnight {
+  background-color: rgb(13,8,5);
+}
+
+#majestic {
+  background-color: rgb(244,243,232);
+}
+
+#graphite {
+  background-color: rgb(96,96,96);
+}
+
+#platinum {
+  background-color: rgb(199,202,198);
+}
+
+#iridium {
+  background-color: rgb(1,44,87);
+}
+
+#hagane-blue {
+  background-color: rgb(95,115,124);
+}
+
+#obsidian {
+  background-color: rgb(7,0,0);
+}
+
+#pure-white {
+  background-color: rgb(243,242,231);
+}
+
+#mocha-almond {
+  background-color: rgb(50,15,6);
+}
+
+#view-car {
+  opacity: 0.18;
+}
