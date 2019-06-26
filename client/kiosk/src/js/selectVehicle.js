@@ -156,61 +156,61 @@ const deactivateColors = () => {
   mocha.removeEventListener('click', mochaClick);
 }
 
-const q50Click = () => {
+const activateCars = () => {
+  q50.style.opacity = 1;
+  q50.addEventListener('click', q50Click);
+  q60.style.opacity = 1;
+  q60.addEventListener('click', q60Click);
+  q70.style.opacity = 1;
+  q70.addEventListener('click', q70Click);
+  q70l.style.opacity = 1;
+  q70l.addEventListener('click', q70lClick);
+}
+
+const deactivateCars = () => {
+  q50.style.opacity = 0.18;
+  q50.removeEventListener('click', q50Click);
   q60.style.opacity = 0.18;
   q60.removeEventListener('click', q60Click);
   q70.style.opacity = 0.18;
   q70.removeEventListener('click', q70Click);
   q70l.style.opacity = 0.18;
   q70l.removeEventListener('click', q70lClick);
+}
+
+const q50Click = () => {
+  deactivateCars();
+  q50.style.opacity = 1;
+  q50.addEventListener('click', q50Click);
   activateColors();
 }
 
 const q60Click = () => {
-  q50.style.opacity = 0.18;
-  q50.removeEventListener('click', q50Click);
-  q70.style.opacity = 0.18;
-  q70.removeEventListener('click', q70Click);
-  q70l.style.opacity = 0.18;
-  q70l.removeEventListener('click', q70lClick);
+  deactivateCars();
+  q60.style.opacity = 1;
+  q60.addEventListener('click', q60Click);
   activateColors();
 }
 
 const q70Click = () => {
-  q50.style.opacity = 0.18;
-  q50.removeEventListener('click', q50Click);
-  q60.style.opacity = 0.18;
-  q60.removeEventListener('click', q60Click);
-  q70l.style.opacity = 0.18;
-  q70l.removeEventListener('click', q70lClick);
+  deactivateCars();
+  q70.style.opacity = 1;
+  q70.addEventListener('click', q70Click);
   activateColors();
 }
 
 const q70lClick = () => {
-  q50.style.opacity = 0.18;
-  q50.removeEventListener('click', q50Click);
-  q60.style.opacity = 0.18;
-  q60.removeEventListener('click', q60Click);
-  q70.style.opacity = 0.18;
-  q70.removeEventListener('click', q70Click);
+  deactivateCars();
+  q70l.style.opacity = 1;
+  q70l.addEventListener('click', q70lClick);
   activateColors();
 }
 
 const carClick = () => {
   car.style.opacity = 1;
   suv.style.opacity = 0.18;
-  qx30.style.opacity = 0.18;
-  qx50.style.opacity = 0.18;
-  qx60.style.opacity = 0.18;
-  qx80.style.opacity = 0.18;
-  q50.style.opacity = 1;
-  q60.style.opacity = 1;
-  q70.style.opacity = 1;
-  q70l.style.opacity = 1;
-  q50.addEventListener('click', q50Click);
-  q60.addEventListener('click', q60Click);
-  q70.addEventListener('click', q70Click);
-  q70l.addEventListener('click', q70lClick);
+  activateCars();
+  deactivateSUVs();
   deactivateColors();
   deactivateButton();
   progress.style.width = progress1;
@@ -218,61 +218,61 @@ const carClick = () => {
 car.addEventListener('click', carClick);
 
 
-const qx60Click = () => {
+const activateSUVs = () => {
+  qx30.style.opacity = 1;
+  qx50.style.opacity = 1;
+  qx60.style.opacity = 1;
+  qx80.style.opacity = 1;
+  qx30.addEventListener('click', qx30Click);
+  qx50.addEventListener('click', qx50Click);
+  qx60.addEventListener('click', qx60Click);
+  qx80.addEventListener('click', qx80Click);
+}
+
+const deactivateSUVs = () => {
   qx30.style.opacity = 0.18;
-  qx30.removeEventListener('click', qx30Click);
   qx50.style.opacity = 0.18;
-  qx50.removeEventListener('click', q70Click);
+  qx60.style.opacity = 0.18;
   qx80.style.opacity = 0.18;
+  qx30.removeEventListener('click', qx30Click);
+  qx50.removeEventListener('click', qx50Click);
+  qx60.removeEventListener('click', qx60Click);
   qx80.removeEventListener('click', qx80Click);
-  activateColors();
 }
 
 const qx30Click = () => {
-  qx60.style.opacity = 0.18;
-  qx60.removeEventListener('click', qx60Click);
-  qx50.style.opacity = 0.18;
-  qx50.removeEventListener('click', qx50Click);
-  qx80.style.opacity = 0.18;
-  qx80.removeEventListener('click', qx80Click);
+  deactivateSUVs();
+  qx30.style.opacity = 1;
+  qx30.addEventListener('click', qx30Click);
   activateColors();
 }
 
 const qx50Click = () => {
-  qx60.style.opacity = 0.18;
-  qx60.removeEventListener('click', qx60Click);
-  qx30.style.opacity = 0.18;
-  qx30.removeEventListener('click', qx30Click);
-  qx80.style.opacity = 0.18;
-  qx80.removeEventListener('click', qx80Click);
+  deactivateSUVs();
+  qx50.style.opacity = 1;
+  qx50.addEventListener('click', qx50Click);
+  activateColors();
+}
+
+const qx60Click = () => {
+  deactivateSUVs();
+  qx60.style.opacity = 1;
+  qx60.addEventListener('click', qx60Click);
   activateColors();
 }
 
 const qx80Click = () => {
-  qx60.style.opacity = 0.18;
-  qx60.removeEventListener('click', qx60Click);
-  qx30.style.opacity = 0.18;
-  qx30.removeEventListener('click', qx30Click);
-  qx50.style.opacity = 0.18;
-  qx50.removeEventListener('click', qx50Click);
+  deactivateSUVs();
+  qx80.style.opacity = 1;
+  qx80.addEventListener('click', qx80Click);
   activateColors();
 }
 
 const suvClick = () => {
   suv.style.opacity = 1;
   car.style.opacity = 0.18;
-  qx30.style.opacity = 1;
-  qx50.style.opacity = 1;
-  qx60.style.opacity = 1;
-  qx80.style.opacity = 1;
-  q50.style.opacity = 0.18;
-  q60.style.opacity = 0.18;
-  q70.style.opacity = 0.18;
-  q70l.style.opacity = 0.18;
-  qx30.addEventListener('click', qx30Click);
-  qx50.addEventListener('click', qx50Click);
-  qx60.addEventListener('click', qx60Click);
-  qx80.addEventListener('click', qx80Click);
+  activateSUVs();
+  deactivateCars();
   deactivateColors();
   deactivateButton();
   progress.style.width = progress1;
