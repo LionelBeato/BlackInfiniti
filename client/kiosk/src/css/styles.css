@@ -101,11 +101,6 @@ div.progress {
   display: block !important;
 }
 
-.my-flipster li a {
-  display: block;
-  cursor: pointer;
-}
-
 .my-flipster img {
   margin-top: 1rem;
   width: 600px;
