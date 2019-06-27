@@ -72,6 +72,16 @@ const viewTicket = (id, target) => {
 
 const myQueue = document.getElementById("queueContent");
 myQueue.innerHTML = "";
+myQueue.innerHTML += `<div class="row" style="background-color:black;color:white;width:94vw;margin:0.8rem;margin-top:0;font-size:1.5rem;">`
+ + `<div class="col-md-1">ID</div>`
+ + `<div class="col-md-2">First</div>`
+ + `<div class="col-md-2">Last</div>`
+ + `<div class="col-md-1">Year</div>`
+ + `<div class="col-md-2">Color</div>`
+ + `<div class="col-md-1">Model</div>`
+ + `<div class="col-md-2">Price</div>`
+ + `</div>`;
+
 
 const populateLine = (ticket) => {
   const lineID = `ticket${ticket.saleRequestID}`;
