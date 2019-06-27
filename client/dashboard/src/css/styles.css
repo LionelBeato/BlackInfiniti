@@ -1,0 +1,99 @@
+/* ====-====-====-====-====-==== 
+          Font Classes
+   ====-====-====-====-====-==== */
+
+   .montserrat {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .cardo {
+    font-family: 'Cardo', serif;
+  }
+  
+  /* ====-====-====-====-====-==== 
+            Type Selectors
+     ====-====-====-====-====-==== */
+/*   
+  * {
+    border: 1px solid red;
+  } */
+
+  html, body {
+    height: 100%;
+  }
+  
+  header {
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid rgba(30,30,30,0.3);
+  }
+  
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 100%;
+  }
+  
+  /* ====-====-====-====-====-==== 
+            Global Classes
+     ====-====-====-====-====-==== */
+  
+  .top-margin {
+    margin-top: 20px;
+  }
+  
+  
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 1.7rem;
+  margin-bottom: 1.7rem;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+  /* ====-====-====-====-====-==== 
+            Bootstrap Styles
+     ====-====-====-====-====-==== */
+  
+     .btn {
+      font-family: 'Montserrat', sans-serif;
+      padding: 0.7rem 10rem;
+      font-size: 1.7rem;
+      text-transform: uppercase;
+    }
+    
+    .progress-gray {
+      background-color: rgb(179, 179, 179) !important;
+    }
+  
+  /* ====-====-====-====-====-==== 
+              Template
+     ====-====-====-====-====-==== */
+  
+  .container-logo {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo {
+    max-width: 80px;
+  }
+  
+  div.progress {
+    height: 2rem;
+    bottom: 10px;
+    margin-right: 10%;
+    margin-left: 10%;
+    width: 80%;
+  }
+  
