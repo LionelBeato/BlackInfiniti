@@ -11,9 +11,9 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
   <Style>
-    * {
-      border: 1px solid red;
-    }
+    /*{
+     border: 1px solid red; 
+    }*/
 
     .carselected {
       width: 35rem;
@@ -45,17 +45,25 @@
     </div>
   </header>
 
-  <main class="cardo">
+    <!-- Begin Body Structure -->    
+    <main class="cardo">
+      <!-- Body Structure is one Large Column housing 4 seperate rows of Data:
+        Meet your Infiniti Row
+        Vehicle  Selected Row
+        Vehicle Information: Year Color Model Price Row
+        Buttons Housing Yes and button No roW
+      -->
     <div class="col">
-      <div class="row">
-        Meet your New Infiniti
+  
+      <div class="row"><!-- Meet your Infiniti-->
+        Meet your New Infiniti 
       </div>
       <div class="row">
-        <div class="col">
+        <div class="col"><!-- Vehicle Selected-->
           <img class="carselected" src="./img/q60.png">
         </div>
       </div>
-      <div class="row">
+      <div class="row"><!--Vehicle Information -->
         <div class="col">
           Year
         </div>
@@ -69,13 +77,12 @@
           Price
         </div>
       </div>
-      <div class="row">
+      <div class="row"><!--Buttons Housing Row-->
         <div class="col">
           Button 1 Text
         </div>
         <div class="col">
           Button 2 Text
-
         </div>
 
       </div>
