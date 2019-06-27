@@ -82,13 +82,19 @@ div.progress {
           Model Slider
    ====-====-====-====-====-==== */
 
-.model {
+.slider {
   flex-direction: column;
 }
 
-.model h1 {
+.slider h1 {
   margin: 2.2rem 0 1.8rem;
   font-size: 1.8rem;
+}
+
+.my-flipster,
+.my-flipster ul {
+  height: 500px !important;
+  width: 100%;
 }
 
 .my-flipster {
