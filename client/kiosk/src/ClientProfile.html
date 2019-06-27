@@ -13,8 +13,20 @@
 </head>
 
 <style>
+  .form-control {
+    font-size: 1rem;
+    font-family: "Montserrat";
+  }
 
+  .custom-select {
+    font-family: "Montserrat";
+    font-size: 1rem;
+    color: gray;
+  }
 
+  body {
+    line-height: 3;
+  }
 </style>
 
 <body>
@@ -30,7 +42,9 @@
       <form class="needs-validation" novalidate="">
         <div class="row">
           <div class="col-md-6 mb-3 mt-1">
-            <label for="firstName"><h5>First name</h5></label>
+            <label for="firstName">
+              <h5>First name</h5>
+            </label>
             <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
             <div class="invalid-feedback">
               Valid first name is required.
@@ -38,7 +52,9 @@
           </div>
 
           <div class="col-md-6 mb-3 mt-1">
-            <label for="lastName"><h5>Last name</h5></label>
+            <label for="lastName">
+              <h5>Last name</h5>
+            </label>
             <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
             <div class="invalid-feedback">
               Valid last name is required.
@@ -49,7 +65,9 @@
         <div class="row">
 
           <div class="col-md-12 mb-3">
-            <label for="email"><h5>Email <span class="text-muted"></span></h5></label>
+            <label for="email">
+              <h5>Email <span class="text-muted"></span></h5>
+            </label>
             <input type="email" class="form-control" id="email" placeholder="you@example.com">
             <div class="invalid-feedback">
               Please enter a valid email address.
@@ -61,7 +79,9 @@
         <div class="row">
           <div class="col-md-7">
             <div class="mb-3">
-              <label for="address"><h5>Address</h5></label>
+              <label for="address">
+                <h5>Address</h5>
+              </label>
               <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
               <div class="invalid-feedback">
                 Please enter your address.
@@ -70,7 +90,9 @@
           </div>
 
           <div class="col-md-2">
-            <label for="state"><h5>State</h5></label>
+            <label for="state">
+              <h5>State</h5>
+            </label>
             <select class="custom-select d-block w-100" id="state" required="">
               <option value="">Choose...</option>
               <option value="AL">AL</option>
@@ -130,12 +152,29 @@
             </div>
           </div>
           <div class="col-md-3">
-            <label for="zip"><h5>Zip</h5></label>
+            <label for="zip">
+              <h5>Zip</h5>
+            </label>
             <input type="text" class="form-control" id="zip" placeholder="" required="">
             <div class="invalid-feedback">
               Zip code required.
             </div>
           </div>
+
+          <!-- <div class="row"> -->
+            <div class="col-md-12">
+              <label for="payment">
+                <h5>Payment options</h5>
+              </label>
+              <select class="custom-select d-block w-100" id="payment" required="">
+                <option value="">Pick your preference</option>
+                <option value="Purchase">I prefer to purchase</option>
+                <option value="Lease">I prefer to lease</option>
+                <option value="Finance">I prefer to finance</option>
+              </select>
+
+            </div>
+          <!-- </div> -->
 
         </div>
         <div class="row" style="justify-content:center;">
