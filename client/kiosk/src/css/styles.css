@@ -79,7 +79,7 @@ div.progress {
 }
 
 /* ====-====-====-====-====-==== 
-          Model Slider
+      Select Vehicle Slider
    ====-====-====-====-====-==== */
 
 .slider {
@@ -132,4 +132,35 @@ div.progress {
   100% {
     box-shadow: 2px 2px 6px 4px rgba(30,30,30,0.25);
   }
+}
+
+/* --- Results Page --- */
+
+/*forces bootstrap button to work within defined css properties */
+.buttonrow {
+  flex-direction: row;
+  column-count: 2;
+  font-size: 2px;
+}
+
+/* properties of the Car selected tag */
+.carselected {
+  width: 35rem;
+  background-color: silver;
+}
+
+/*Properties of each row tag */
+.row {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  max-width: 400px;
+}
+
+.col {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+
 }
