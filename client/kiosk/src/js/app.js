@@ -67,10 +67,12 @@ function init() {
 // Valid type parameters = 'model', color'
 function populateSlider(type, model) {
   if(type == 'model') {
+    $('.progress-bar').css({'width': 'calc(100% / 6)'});
     for(let vehicle of vehiclesArr) {
       $flipsterUL.append(`<li><img src="img/model-slider/${vehicle.modelName}.jpg"/><h2><span>${vehicle.modelName}</span></h2></li>`);
     }
   } else if(type = 'color') {
+      $('.progress-bar').css({'width': 'calc(100% / 6 * 2)'});
       const imagesArr = vehiclesArr.filter(vehicle => vehicle.modelName == model)[0].colors;
       $('.slider h1').text('Choose your vehicle color');
       $('.my-flipster ul').empty();
@@ -100,6 +102,7 @@ const numberWithCommas = (x) => {
 function displayResultsPage(vehicle, color, colorImageNum) {
   $('.slider').empty();
   $('.slider').addClass('slider-result');
+  $('.progress-bar').css({'width': 'calc(100% / 6 * 3)'});
   let html = `
     <div class="result">
       <div class="row">
