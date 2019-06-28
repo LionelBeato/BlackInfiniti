@@ -1,0 +1,65 @@
+{
+  "saleRequests":
+    [
+      {
+        "saleRequestID": "1",
+        "client": {
+          "id": 1,
+          "firstName": "Mamadou",
+          "lastName": "Wann",
+          "phoneNumber": "555-867-5309",
+          "address": "20 Church St.",
+          "city": "Hartford",
+          "state": "CT",
+          "zip": "06103"
+        },
+        "vehicle": {
+          "wholeSalePrice": 59500,
+          "retailPrice": 62590,
+          "year": 2019,
+          "make": "Infiniti",
+          "model": "QX80",
+          "color": "Pearl White",
+          "vin": "JN8AY3887BH222D9S",
+          "vehicleType": "TRUCK",
+          "isLeasable": true,
+          "leaseTerm": 36,
+          "maxMilesPerYear": 12000,
+          "grossCombinedWeight": 8500,
+          "towingCapacity": 15000,
+          "truckWeight": 7385,
+          "is4wd": true
+        }
+      },
+      {
+        "saleRequestID": "2",
+        "client": {
+          "id": 1,
+          "firstName": "Betsy",
+          "lastName": "Idilbi",
+          "phoneNumber": "555-867-5309",
+          "address": "20 Church St.",
+          "city": "Hartford",
+          "state": "CT",
+          "zip": "06103"
+        },
+        "vehicle": {
+          "wholeSalePrice": 59500,
+          "retailPrice": 64200,
+          "year": 2019,
+          "make": "Infiniti",
+          "model": "QX30",
+          "color": "Black",
+          "vin": "JN8AY3887BH222D9S",
+          "vehicleType": "TRUCK",
+          "isLeasable": true,
+          "leaseTerm": 36,
+          "maxMilesPerYear": 12000,
+          "grossCombinedWeight": 8500,
+          "towingCapacity": 15000,
+          "truckWeight": 7385,
+          "is4wd": true
+        }
+      }
+    ]
+}
