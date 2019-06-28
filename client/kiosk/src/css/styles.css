@@ -137,7 +137,7 @@ div.progress {
 /* --- Results Page --- */
 
 /*forces bootstrap button to work within defined css properties */
-.buttonrow {
+.slider .buttonrow {
   flex-direction: row;
   column-count: 2;
   font-size: 2px;
@@ -154,14 +154,14 @@ div.progress {
 }
 
 /*Properties of each row tag */
-.row {
+.slider .row {
   align-items: center;
   display: flex;
   flex-direction: row;
   max-width: 600px;
 }
 
-.col {
+.slider .col {
   justify-content: center;
   align-items: center;
   flex-direction: column;
