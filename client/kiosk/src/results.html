@@ -10,7 +10,36 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
-
+    <Style>
+      /*Div Border Testing
+      {
+        border: 1px solid red; 
+      }*/
+      /*forces bootstrap button to work within defined css properties */
+      .buttonrow {
+        flex-direction: row;
+        column-count: 2;
+        font-size: 2px;
+      }
+      /* properties of the Car selected tag */
+      .carselected {
+        width: 35rem;
+        background-color: silver;
+      }
+      /*Properties of each row tag */
+      .row {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        max-width: 400px;
+      }
+      .col {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        display: flex;
+      }
+    </Style>
   </head>
 
   <body>
@@ -54,10 +83,10 @@
         <div class="buttonrow" class="row">
           <!--Buttons  Row-->
           <div class="col">
-            <a href=""><button font-size height="10px" type="button" class="btn-lg btn-secondary">I Want it!</button></a>
+            <a href="ClientProfile.html"><button font-size height="10px" type="button" class="btn-lg btn-secondary">I Want it!</button></a>
           </div>
           <div class="col">
-            <a href="index.html"><button height="10px" type="button" class="btn-lg btn-secondary">Let's Start
+            <a href="welcome.html"><button height="10px" type="button" class="btn-lg btn-secondary">Let's Start
                 Over!</button></a>
           </div>
 
@@ -67,7 +96,7 @@
 
     <div class="progress">
       <div class="progress-bar progress-bar-striped progress-bar-animated progress-gray" role="progressbar"
-        aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
+        aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 59%"></div>
     </div>
 =
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
