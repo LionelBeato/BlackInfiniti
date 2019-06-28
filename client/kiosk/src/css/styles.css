@@ -145,6 +145,10 @@ div.progress {
 
 /* properties of the Car selected tag */
 .carselected {
+  margin-bottom: 1rem;
+}
+
+.carselected img {
   width: 35rem;
   background-color: silver;
 }
@@ -154,7 +158,7 @@ div.progress {
   align-items: center;
   display: flex;
   flex-direction: row;
-  max-width: 400px;
+  max-width: 600px;
 }
 
 .col {
@@ -162,5 +166,19 @@ div.progress {
   align-items: center;
   flex-direction: column;
   display: flex;
+}
 
+.vehicle-info {
+  margin-bottom: 1rem;
+}
+
+.vehicle-info p {
+  flex-direction: row;
+  width: 600px;
+}
+
+.result .btn {
+  padding: .5rem 2rem;
+  font-size: 1.2rem;
+  width: 260px;
 }

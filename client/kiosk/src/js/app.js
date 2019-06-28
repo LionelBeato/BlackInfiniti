@@ -72,6 +72,7 @@ function populateSlider(type, model) {
     }
   } else if(type = 'color') {
       const imagesArr = vehiclesArr.filter(vehicle => vehicle.modelName == model)[0].colors;
+      $('.slider h1').text('Choose your vehicle color');
       $('.my-flipster ul').empty();
       for(let i = 0; i < imagesArr.length; i++) {
         $('.my-flipster ul').append(`<li><img src="img/color-slider/${model}/${i + 1}.jpeg"/><h2><span>${model}</span> - <span>${imagesArr[i]}</span></h2></li>`);
@@ -88,6 +89,10 @@ function resetFlipster(model) {
   myFlipster.flipster('jump', middleIndex);
 }
 
+const numberWithCommas = (x) => {
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+
 /* ====-====-====-====-====
          Results Page
    ====-====-====-====-==== */
@@ -95,30 +100,27 @@ function resetFlipster(model) {
 function displayResultsPage(vehicle, color, colorImageNum) {
   $('.slider').empty();
   let html = `
-    <div class="col">
+    <div class="col result">
       <div class="row">
-        <h1>Meet your New Infiniti</h1>
+        <h1>Meet your new Infiniti</h1>
       </div>
-      <div class="row">
+      <div class="row carselected">
         <div class="col">
           <!-- Vehicle Selected-->
-          <img class="carselected" src=img/color-slider/${vehicle.modelName}/${colorImageNum}.jpeg>
+          <img src=img/color-slider/${vehicle.modelName}/${colorImageNum}.jpeg>
         </div>
       </div>
-      <div class="row">
+      <div class="row vehicle-info">
         <!--Vehicle Information -->
-        <div class="col">${vehicle.year}</div>
-        <div class="col">${vehicle.modelName}</div>
-        <div class="col">${color}</div>
-        <div class="col">${vehicle.price}</div>
+        <p class="col">${vehicle.year} ${vehicle.modelName} ${color} - <span> $${numberWithCommas(vehicle.price)}<span></p>
       </div>
       <div class="buttonrow" class="row">
         <!--Buttons  Row-->
         <div class="col">
-          <a href=""><button font-size height="10px" type="button" class="btn-lg btn-secondary">I Want it!</button></a>
+          <a href=""><button type="button" class="btn btn-outline-secondary">I Want it!</button></a>
         </div>
         <div class="col">
-          <a href="index.html"><button height="10px" type="button" class="btn-lg btn-secondary">Let's Start Over!</button></a>
+          <a href="index.html"><button type="button" class="btn btn-outline-secondary">Let's Start Over!</button></a>
         </div>
       </div>
     </div>`;
