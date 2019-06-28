@@ -107,3 +107,13 @@ const truckInfo = (ticket) => {
     return "";
   }
 }
+
+const setEmployeeName = (name) => {
+  document.getElementById("employee-name").innerHTML = `<h4 style="font-weight: normal">${name}</h4>`
+}
+
+fetch('https://jsonplaceholder.typicode.com/users')
+.then(res => res.json())
+.then(array => {
+  setEmployeeName(array[Math.ceil(Math.random() * 10)].name)
+})
