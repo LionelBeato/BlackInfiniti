@@ -172,9 +172,19 @@ div.progress {
   margin-bottom: 1rem;
 }
 
+main.slider-result {
+  justify-content: flex-start;
+}
+
+.slider .result h1 {
+  margin-bottom: 2rem;
+  padding: 0;
+}
+
 .vehicle-info p {
   flex-direction: row;
   width: 600px;
+  font-size: 1.4rem;
 }
 
 .result .btn {

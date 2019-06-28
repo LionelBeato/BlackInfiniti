@@ -99,10 +99,13 @@ const numberWithCommas = (x) => {
 
 function displayResultsPage(vehicle, color, colorImageNum) {
   $('.slider').empty();
+  $('.slider').addClass('slider-result');
   let html = `
-    <div class="col result">
+    <div class="result">
       <div class="row">
-        <h1>Meet your new Infiniti</h1>
+        <div class="col">
+          <h1 class="text-center">Meet your new Infiniti</h1>
+        </div>
       </div>
       <div class="row carselected">
         <div class="col">
@@ -117,10 +120,10 @@ function displayResultsPage(vehicle, color, colorImageNum) {
       <div class="buttonrow" class="row">
         <!--Buttons  Row-->
         <div class="col">
-          <a href=""><button type="button" class="btn btn-outline-secondary">I Want it!</button></a>
+          <a href="ClientProfile.html"><button type="button" class="btn btn-outline-secondary">I Want it!</button></a>
         </div>
         <div class="col">
-          <a href="index.html"><button type="button" class="btn btn-outline-secondary">Let's Start Over!</button></a>
+          <a href="welcome.html"><button type="button" class="btn btn-outline-secondary">Let's Start Over!</button></a>
         </div>
       </div>
     </div>`;
