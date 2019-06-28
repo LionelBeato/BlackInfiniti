@@ -37,7 +37,7 @@ const populateLine = (ticket) => {
 }
 
 fetchData().then(data => {
-  data.saleRequests.forEach(ticket => {
+  data.forEach(ticket => {
     populateLine(ticket)});
 });
 
