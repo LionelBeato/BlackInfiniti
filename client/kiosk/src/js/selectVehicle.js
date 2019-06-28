@@ -26,7 +26,7 @@ const progress2 = "39%";
 const progress3 = "50%";
 
 const viewCarClick = () => {
-  window.location.href = './selectVehicle.html';
+  window.location.href = './results.html';
 }
 
 const activateButton = () => {
