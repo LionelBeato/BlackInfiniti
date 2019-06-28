@@ -7,6 +7,7 @@
           "id": 1,
           "firstName": "Mamadou",
           "lastName": "Wann",
+          "email": "mwann@tts.com",
           "phoneNumber": "555-867-5309",
           "address": "20 Church St.",
           "city": "Hartford",
@@ -14,6 +15,7 @@
           "zip": "06103"
         },
         "vehicle": {
+          "stockNumber": 1,
           "wholeSalePrice": 59500,
           "retailPrice": 62590,
           "year": 2019,
@@ -37,6 +39,7 @@
           "id": 1,
           "firstName": "Betsy",
           "lastName": "Idilbi",
+          "email": "bidilbi@tts.com",
           "phoneNumber": "555-867-5309",
           "address": "20 Church St.",
           "city": "Hartford",
@@ -44,6 +47,7 @@
           "zip": "06103"
         },
         "vehicle": {
+          "stockNumber": 2,
           "wholeSalePrice": 59500,
           "retailPrice": 64200,
           "year": 2019,
