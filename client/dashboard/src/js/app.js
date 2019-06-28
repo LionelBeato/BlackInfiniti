@@ -49,7 +49,7 @@ const viewTicket = (ticket, target) => {
   target.innerHTML += `<div class="row" style="width:94vw;margin:0.8rem;font-size:1.5rem;">`
    + `<div class="col-md-12">`
    + `<div class="card text-white bg-light">`
-   + `<div class="card-header"><button id="alertButton" type="button" class="btn btn-secondary">Remove From Queue</button></div>`
+   + `<div class="card-header"><button id="alertButton" type="button" class="btn btn-outline-secondary">Remove From Queue</button></div>`
    + `<div class="card-body">`
    + `<div class="row">`
    + `<div class="col-md-12">`
