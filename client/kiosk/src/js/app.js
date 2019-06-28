@@ -7,7 +7,7 @@ const modelsArr = ['Q50', 'Q70', 'QX30', 'QX50', 'QX80'];
 const modelColors = {
   Q50: ['Majestic White', 'Hermosa Blue', 'Liquid Platinum', 'Black Obsidian', 'Graphite Shadow'],
   Q70: ['Majestic White', 'Hermosa Blue', 'Liquid Platinum', 'Black Obsidian', 'Graphite Shadow'],
-  QX30: ['Majestic White', 'Hermosa Blue', 'Liquid Platinum', 'Black Obsidian', 'Graphite Shadow'],
+  QX30: ['Graphite Shadow', 'Black Obsidian', 'Magnetic Red', 'Majestic Red', 'Chestnut Bronze', 'Ink Blue'],
   QX50: ['Majestic White', 'Hermosa Blue', 'Liquid Platinum', 'Black Obsidian', 'Graphite Shadow'],
   QX70: ['Majestic White', 'Hermosa Blue', 'Liquid Platinum', 'Black Obsidian', 'Graphite Shadow']
 };
@@ -54,4 +54,8 @@ function resetFlipster(model) {
   // Reset flipster so it jumps to the middle index
   myFlipster.flipster('jump', middleIndex);
 }
+
+/* ====-====-====-====-====
+         Results Page
+   ====-====-====-====-==== */
 
