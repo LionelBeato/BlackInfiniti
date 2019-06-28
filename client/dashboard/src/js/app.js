@@ -115,5 +115,6 @@ const setEmployeeName = (name) => {
 fetch('https://jsonplaceholder.typicode.com/users')
 .then(res => res.json())
 .then(array => {
-  setEmployeeName(array[Math.ceil(Math.random() * 10)].name)
+  const random = Math.floor(Math.random() * 10);
+  setEmployeeName(array[random].name)
 })
