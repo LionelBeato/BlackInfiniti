@@ -1,9 +1,10 @@
 const targetUrl = 'http://127.0.0.1:8080'
 
-let typeOfSale = "FullSale";
+let typeOfSale = "";
 const setTypeOfSale = (type) => {
   typeOfSale = type;
 }
+setTypeOfSale(document.getElementsByTagName("body")[0].id)
 
 const myQueue = document.getElementById("queueContent");
 myQueue.innerHTML = "";
@@ -87,9 +88,10 @@ const viewTicket = (ticket, target) => {
     + `<div class="card text-white bg-secondary">`
     + `<div class="card-header">${ticket.vehicle.modelYear} ${ticket.vehicle.make} ${ticket.vehicle.model}, Stock #${ticket.vehicle.stockNumber}</div>`
     + `<div class="card-body">`
-    // + `<div>Retial: \$${numberWithCommas(ticket.vehicle.retailPrice)}, Whole Sale: \$${numberWithCommas(ticket.vehicle.wholesaleCost)}</div>`
     + `<div>Color: ${ticket.vehicle.color}</div>`
+    + `<div>Retail: \$${numberWithCommas(ticket.vehicle.retailPrice)}, Wholesale: \$${numberWithCommas(ticket.vehicle.wholesaleCost)}</div>`
     + `${truckInfo(ticket.vehicle)}`
+    + `${leaseInfo(ticket)}`
     + `</div>`
     + `</div>`
     + `</div>`
@@ -128,6 +130,15 @@ const numberWithCommas = (x) => {
 const truckInfo = (vehicle) => {
   if (vehicle.vehicleType === "TRUCK") {
     return `GCW: ${numberWithCommas(vehicle.grossCombinedWeight)} lbs., Towing: ${numberWithCommas(vehicle.towingCapacity)} lbs., Truck Weight: ${numberWithCommas(vehicle.truckWeight)} lbs., 4WD: Yes`;
+  }
+  else {
+    return "";
+  }
+}
+
+const leaseInfo = (ticket) => {
+  if (ticket.saleRequest.typeOfSale === "Lease") {
+    return `Lease Term: ${ticket.vehicle.leaseTerm} Months, Miles Per Year: ${numberWithCommas(ticket.vehicle.maxMilesPerYear)}`;
   }
   else {
     return "";
