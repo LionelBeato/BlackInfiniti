@@ -7,7 +7,7 @@ const $flipsterUL = $('.my-flipster ul');
 const vehiclesArr = [
   {
     modelName: 'Q50',
-    colors: ['Majestic White', 'Hermosa Blue', 'Liquid Platinum', 'Black Obsidian', 'Graphite Shadow'],
+    colors: ['Liquid Platinum', 'Majestic White', 'Hermosa Blue', 'Black Obsidian', 'Graphite Shadow'],
     year: 2019,
     price: 35650
   },
@@ -19,19 +19,19 @@ const vehiclesArr = [
   },
   {
     modelName: 'QX30',
-    colors: ['Graphite Shadow', 'Black Obsidian', 'Magnetic Red', 'Majestic Red', 'Chestnut Bronze', 'Ink Blue'],
+    colors: ['Graphite Shadow', 'Black Obsidian', 'Magnetic Red', 'Majestic White', 'Chestnut Bronze', 'Ink Blue'],
     year: 2019,
     price: 30250
   },
   {
     modelName: 'QX50',
-    colors: ['Majestic White', 'Hermosa Blue', 'Liquid Platinum', 'Black Obsidian', 'Graphite Shadow'],
+    colors: ['Liquid Platinum', 'Majestic White', 'Hermosa Blue', 'Black Obsidian', 'Graphite Shadow'],
     year: 2019,
     price: 36650
   },
   {
     modelName: 'QX80',
-    colors: ['Majestic White', 'Hermosa Blue', 'Liquid Platinum', 'Black Obsidian', 'Graphite Shadow'],
+    colors: ['Liquid Platinum', 'Majestic White', 'Hermosa Blue', 'Black Obsidian', 'Graphite Shadow'],
     year: 2019,
     price: 65500
   }
@@ -123,10 +123,10 @@ function displayResultsPage(vehicle, color, colorImageNum) {
       <div class="buttonrow" class="row">
         <!--Buttons  Row-->
         <div class="col">
-          <a href="ClientProfile.html"><button type="button" class="btn btn-outline-secondary">I Want it!</button></a>
+          <a href="http://localhost:8080/clientProfile"><button type="button" class="btn btn-outline-secondary">I Want it!</button></a>
         </div>
         <div class="col">
-          <a href="welcome.html"><button type="button" class="btn btn-outline-secondary">Let's Start Over!</button></a>
+          <a href="http://localhost:8080/welcome"><button type="button" class="btn btn-outline-secondary">Let's Start Over!</button></a>
         </div>
       </div>
     </div>`;
