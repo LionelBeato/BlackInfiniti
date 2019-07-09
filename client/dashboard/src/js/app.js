@@ -149,11 +149,9 @@ const setEmployeeName = (name) => {
   document.getElementById("employee-name").innerHTML = `<h4 style="font-weight: normal">${name}</h4>`
 }
 
-// setEmployeeName("Max Proffet")
-
-// fetch('https://jsonplaceholder.typicode.com/users')
-// .then(res => res.json())
-// .then(array => {
-//   const random = Math.floor(Math.random() * 10);
-//   setEmployeeName(array[random].name)
-// })
+if (!localStorage.getItem("myURL")) {
+  location.href = "http://localhost:5500/client/dashboard/src/"
+}
+else {
+document.getElementById("sale-request-link").href = localStorage.getItem("myURL");
+}
